@@ -1,0 +1,42 @@
+﻿@model SchoolManagement.DataAccess.ViewModels.ClassTimeTableViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+
+<div class="container">
+    <div class="row">
+        <h5>Time Table Filter By Class / Teacher</h5>
+        <div class="col-sm">
+            Teacher Filter : 
+            <form asp-action="GetTimeTableByTeacherId" method="get" class="form-inline">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Teachers </label>
+                <select class="custom-select my-1 mr-sm-2" name="teacherId" class="form-control">
+                    <option selected>-- Select Teacher --</option>
+                    @foreach (var item in Model.GetTeachers)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select>
+                <button type="submit" class="btn btn-primary my-1">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm">
+            Class Filter : 
+            <form asp-action="GetTimeTableByClassId" method="get" class="form-inline">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Classes </label>
+                <select class="custom-select my-1 mr-sm-2" name="schoolClassId" class="form-control">
+                    <option selected>-- Select Class --</option>
+                    @foreach (var item in Model.GetSchools)
+                    {
+                        <option value="@item.Id">@item.Name @item.Section</option>
+                    }
+                </select>
+                <button type="submit" class="btn btn-primary my-1">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

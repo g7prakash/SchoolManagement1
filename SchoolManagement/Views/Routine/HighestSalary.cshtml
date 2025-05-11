@@ -1,0 +1,46 @@
+﻿@model SchoolManagement.DataAccess.ViewModels.EmployeeDepartmentViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmployeeId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmployeeName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DepartmentName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Salary)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @Model.EmployeeId
+                    </td>
+                    <td>
+                        @Model.EmployeeName
+                    </td>
+                    <td>
+                        @Model.DepartmentName
+                    </td>
+                    <td>
+                        @Model.Salary
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

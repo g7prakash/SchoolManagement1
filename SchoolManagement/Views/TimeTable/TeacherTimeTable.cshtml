@@ -1,0 +1,35 @@
+﻿@model SchoolManagement.DataAccess.ViewModels.ClassTimeTableViewModel
+
+@{
+    ViewData["Title"] = "TeacherTimeTable";
+}
+
+<div>
+    <h5>TimeTable for Teacher : @Model.TeacherTimeTables.FirstOrDefault().TeacherName</h5>
+    <a asp-action="Index" class="mt-5 mb-3 btn btn-secondary">Back to List</a>
+
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">TeacherName</th>
+                    <th scope="col">SubjectName</th>
+                    <th scope="col">ClassName</th>
+                    <th scope="col">PeriodName</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var teacher in Model.TeacherTimeTables)
+                {
+                    <tr>
+                        <th>@teacher.TeacherName</th>
+                        <th>@teacher.SubjectName</th>
+                        <th>@teacher.ClassName</th>
+                        <th>@teacher.PeriodName</th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

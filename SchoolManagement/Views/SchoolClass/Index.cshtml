@@ -1,0 +1,51 @@
+﻿@using SchoolManagement.Models.Enums
+@model IEnumerable<StudentManagement.Models.SchoolClass>
+@{
+    ViewData["Title"] = "Class Details";
+}
+
+<div class="container">
+    <div class="row col-5">
+
+        <p>
+            <a asp-action="Create" class="btn btn-success">Add Class</a>
+        </p>
+
+        <table class="table table-bordered table-striped col-md-4 order-md-2 mb-4 ">
+            <thead>
+                <tr>
+                    <th>Class Name</th>
+                    <th>Section</th>
+                    <th colspan="2" class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Section</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Edit</a>
+                        </td>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var message = '@TempData["DeleteSuccess"]';
+        if (message) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Deleted!',
+                text: message
+            });
+        }
+    };
+</script>

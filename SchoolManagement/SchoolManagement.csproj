@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>0270ad6b-2b65-4b3e-afe7-969e9af9782d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="Models\Interfaces\**" />
+    <Compile Remove="Models\Repositories\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="Models\Interfaces\**" />
+    <Content Remove="Models\Repositories\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="Models\Interfaces\**" />
+    <EmbeddedResource Remove="Models\Repositories\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="Models\Interfaces\**" />
+    <None Remove="Models\Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\ClassTimeTableViewModel.cs" />
+    <Compile Remove="Models\Context\SchoolDbContext.cs" />
+    <Compile Remove="Models\EmployeeDepartmentViewModel.cs" />
+    <Compile Remove="Models\Extensions\DataSeedExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.24" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudentManagement.DataAccess\StudentManagement.DataAccess.csproj" />
+    <ProjectReference Include="..\StudentManagement.Models\StudentManagement.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Context\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Nlog.config">
+      <Generator>Nlog</Generator>
+    </Content>
+  </ItemGroup>
+
+</Project>

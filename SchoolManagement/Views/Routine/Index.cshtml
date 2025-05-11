@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SchoolManagement.DataAccess.ViewModels.EmployeeDepartmentViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class="container">
+    <div class="row">
+        <h5>Time Table Filter By Salary Rank</h5>
+        <div class="col-sm">
+            Dummy Filter :
+            <form method="get" class="form-inline">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Teachers </label>
+                <select class="custom-select my-1 mr-sm-2" name="teacherId" class="form-control">
+                    <option selected>-- Select Dummy --</option>
+                    
+                </select>
+                <button class="btn btn-primary my-1">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm">
+            salary Rank Filter :
+            <form asp-action="GetNthHighestSalary" method="get" class="form-inline">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Nth Salary </label>
+                <select class="custom-select my-1 mr-sm-2" name="salRank" class="form-control">
+                    <option selected>-- Select number --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                </select>
+                <button type="submit" class="btn btn-primary my-1">Submit</button>
+            </form>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmployeeId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmployeeName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DepartmentName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Salary)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmployeeId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmployeeName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DepartmentName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Salary)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

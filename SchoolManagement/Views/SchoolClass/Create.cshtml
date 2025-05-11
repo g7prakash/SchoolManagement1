@@ -1,0 +1,35 @@
+﻿@using SchoolManagement.Models.Extensions
+@using static SchoolManagement.Models.Enums.MenuItems
+@model StudentManagement.Models.SchoolClass
+@{
+    ViewData["Title"] = "Add Class";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="container">
+    <div class="row-cols-4">
+
+        <form asp-action="Create" method="post" class="col-md-4 order-md-2 mb-4 form-horizontal">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="input-group mb-3 form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Section" class="control-label"></label>
+                <select asp-for="Section" class="form-control" asp-items="(List<SelectListItem>)EnumHelper.GetSelectListFromEnum<ClassSection>()"></select>
+                <span asp-validation-for="Section" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="mt-5 mb-3 btn btn-primary">Save</button>
+                <a asp-action="Index" class="mt-5 mb-3 btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

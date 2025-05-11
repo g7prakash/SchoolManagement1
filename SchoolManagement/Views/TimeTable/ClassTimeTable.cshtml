@@ -1,0 +1,71 @@
+﻿@model SchoolManagement.DataAccess.ViewModels.ClassTimeTableViewModel
+
+@{
+    ViewData["Title"] = "ClassTimeTable";
+}
+
+<div>
+    <h5>TimeTable : @Model.ClassName</h5>
+    <a asp-action="Index" class="mt-5 mb-3 btn btn-secondary">Back to List</a>
+    
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="5" class="text-center">CLASS: @Model.ClassName</th>
+                    <th scope="col" colspan="3" class="text-center">CLASS TEACHER: @Model.ClassTeacher</th>
+                </tr>
+                <tr>
+                    <th scope="col">DAYS / PERIODS</th>
+                    <th scope="col">1ST</th>
+                    <th scope="col">2ND</th>
+                    <th scope="col">3RD</th>
+                    <th scope="col">4TH</th>
+                    <th scope="col">5TH</th>
+                    <th scope="col">6TH</th>
+                    <th scope="col">ZERO PD. / FEEDBACK</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var day in Model.TimeTablePeriodDayWise)
+                {
+                    <tr>
+                        <th scope="row">@day.Day</th>
+                        <td>@day.Period1</td>
+                        <td>@day.Period2</td>
+                        <td>@day.Period3</td>
+                        <td>@day.Period4</td>
+                        <td>@day.Period5</td>
+                        <td>@day.Period6</td>
+                        <td>@day.Period7</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <hr />
+    <div class="row col-5">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="8" class="text-center">Assigned Teachers to @Model.ClassName</th>
+                </tr>
+                <tr>
+                    <th scope="col">Teacher Name</th>
+                    <th scope="col">Subjects</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var teacher in Model.AssignedTeachersforClass)
+                {
+                    <tr>
+                        <th>@teacher.TeacherName</th>
+                        <td>@teacher.TeacherSubject</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

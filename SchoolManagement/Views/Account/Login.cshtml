@@ -1,0 +1,61 @@
+﻿@model StudentManagement.DataAccess.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row">
+
+    <div class="col-md-6">
+        <h5>Local Login</h5>
+        <form method="post" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Rememberme" /> @Html.DisplayNameFor(model => model.Rememberme)
+                </label>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Login" class="btn btn-primary" />
+                <a asp-action="ForgetPassword" asp-controller="Account" value="Reset Password" class="btn btn-primary">Forget Password</a>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h5>External Login</h5>
+        @if(Model.ExternalLogins.Count == 0)
+        {
+            <h6>No External Logins available</h6>
+            
+        }
+        else
+        {
+            <form method="post" asp-action="ExternalLogin" asp-route-returnurl="@Model.ReturnUrl">
+
+                <div class="form-group">
+                    @foreach (var provider in Model.ExternalLogins)
+                    {
+                        <input type="submit" value="@provider.Name" title="@provider.DisplayName" name="provider" class="btn btn-primary" />
+                    }
+
+                </div>
+            </form>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
