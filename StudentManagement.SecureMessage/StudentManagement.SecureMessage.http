@@ -1,0 +1,6 @@
+@StudentManagement.SecureMessage_HostAddress = http://localhost:5172
+
+GET {{StudentManagement.SecureMessage_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

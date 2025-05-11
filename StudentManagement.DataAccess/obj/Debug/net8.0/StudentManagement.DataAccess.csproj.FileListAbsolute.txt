@@ -1,0 +1,17 @@
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\bin\Debug\net8.0\StudentManagement.DataAccess.deps.json
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\bin\Debug\net8.0\StudentManagement.DataAccess.runtimeconfig.json
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\bin\Debug\net8.0\StudentManagement.DataAccess.dll
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\bin\Debug\net8.0\StudentManagement.DataAccess.pdb
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\bin\Debug\net8.0\StudentManagement.Models.dll
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\bin\Debug\net8.0\StudentManagement.Models.pdb
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.csproj.AssemblyReference.cache
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.AssemblyInfoInputs.cache
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.AssemblyInfo.cs
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.csproj.CoreCompileInputs.cache
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentM.78D0AEA5.Up2Date
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.dll
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\refint\StudentManagement.DataAccess.dll
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.pdb
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\StudentManagement.DataAccess.genruntimeconfig.cache
+C:\LocalDev\SchoolManagement\StudentManagement.DataAccess\obj\Debug\net8.0\ref\StudentManagement.DataAccess.dll

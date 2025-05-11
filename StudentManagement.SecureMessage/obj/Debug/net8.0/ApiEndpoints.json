@@ -1,0 +1,347 @@
+[
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "GetById",
+    "RelativePath": "{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "GetRefreshTokens",
+    "RelativePath": "{id}/refresh-tokens",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.EmployeeController",
+    "Method": "AddEmployee",
+    "RelativePath": "api/Employee/add",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmployeeID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateOfBirth",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DepartmentID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salary",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "HireDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.EmployeeController",
+    "Method": "UpdateEmployee",
+    "RelativePath": "api/Employee/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmployeeID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateOfBirth",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gender",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DepartmentID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salary",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "HireDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "Authenticate",
+    "RelativePath": "authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "RefreshToken",
+    "RelativePath": "refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "RevokeToken",
+    "RelativePath": "revoke-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "GetAllX",
+    "RelativePath": "users-refresh-tokens-x",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "GetAllY",
+    "RelativePath": "users-refresh-tokens-y",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.UsersController",
+    "Method": "GetAllZ",
+    "RelativePath": "users-refresh-tokens-z",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.WeatherForecastController",
+    "Method": "GetById_IActionResult",
+    "RelativePath": "WeatherForecast/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StudentManagement.Models.Employees",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.WeatherForecastController",
+    "Method": "GetById",
+    "RelativePath": "WeatherForecast/{id}.{format}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "format",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StudentManagement.Models.Employees",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.WeatherForecastController",
+    "Method": "GetEmployeeDetail",
+    "RelativePath": "WeatherForecast/GetEmployeeDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.WeatherForecastController",
+    "Method": "GetJson",
+    "RelativePath": "WeatherForecast/GetJson",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.WeatherForecastController",
+    "Method": "GetJsonOption",
+    "RelativePath": "WeatherForecast/GetJson",
+    "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.WeatherForecastController",
+    "Method": "MessageGet",
+    "RelativePath": "WeatherForecast/MessageGet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentManagement.SecureMessage.Controllers.WeatherForecastController",
+    "Method": "MessagePost",
+    "RelativePath": "WeatherForecast/MessagePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

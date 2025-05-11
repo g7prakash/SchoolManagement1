@@ -1,0 +1,11 @@
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\bin\Release\net8.0\StudentManagement.Models.deps.json
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\bin\Release\net8.0\StudentManagement.Models.dll
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\bin\Release\net8.0\StudentManagement.Models.pdb
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\StudentManagement.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\StudentManagement.Models.AssemblyInfoInputs.cache
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\StudentManagement.Models.AssemblyInfo.cs
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\StudentManagement.Models.csproj.CoreCompileInputs.cache
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\StudentManagement.Models.dll
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\refint\StudentManagement.Models.dll
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\StudentManagement.Models.pdb
+C:\U4SMDocuments\tenant002\U4SM\StudentManagement.Models\obj\Release\net8.0\ref\StudentManagement.Models.dll

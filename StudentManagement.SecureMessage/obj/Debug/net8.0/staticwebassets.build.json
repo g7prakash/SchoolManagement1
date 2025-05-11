@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "s45aj5dvBkCh0TFJSSD9dS598zAcXwWN72Hd8qvgu2M=",
+  "Source": "StudentManagement.SecureMessage",
+  "BasePath": "_content/StudentManagement.SecureMessage",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
